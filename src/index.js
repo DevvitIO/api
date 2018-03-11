@@ -13,7 +13,7 @@ app.use(cors());
 const router = new express.Router();
 
 require('./routes/leaderboard')(router);
-app.use('/api', router);
+app.use('/v1', router);
 
 app.listen(port);
 console.log(`Started server on port ${port}!`);
